@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:fluttertoast/fluttertoast.dart';
+//import 'package:fluttertoast/fluttertoast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sparcotbtc/Api/OrderUpdateApi.dart';
@@ -233,27 +233,27 @@ class _TrackingPageState extends State<TrackingPage> {
                                   orderId, btStatus);
                               print("staaaaaaaaaaaaaaaatus");
                               if(rsp['strMessage'] == "Success"){
-                                Fluttertoast.showToast(
-                                    msg: "ORDER "+ btStatus,
-                                    toastLength: Toast.LENGTH_SHORT,
-                                    gravity: ToastGravity.BOTTOM,
+                   //             Fluttertoast.showToast(
+                    //                msg: "ORDER "+ btStatus,
+                     //               toastLength: Toast.LENGTH_SHORT,
+                    //                gravity: ToastGravity.BOTTOM,
 
-                                    backgroundColor: Colors.black,
-                                    textColor: Colors.white,
-                                    fontSize: 12.0
-                                );
+                   //                 backgroundColor: Colors.black,
+                   //                 textColor: Colors.white,
+                   //                 fontSize: 12.0
+                    //            );
 
                               }
                               else{
-                                Fluttertoast.showToast(
-                                    msg: "ORDER "+ btStatus +" FAILED",
-                                    toastLength: Toast.LENGTH_SHORT,
-                                    gravity: ToastGravity.BOTTOM,
+                            //    Fluttertoast.showToast(
+                           //         msg: "ORDER "+ btStatus +" FAILED",
+                            //        toastLength: Toast.LENGTH_SHORT,
+                            //        gravity: ToastGravity.BOTTOM,
 
-                                    backgroundColor: Colors.black,
-                                    textColor: Colors.white,
-                                    fontSize: 12.0
-                                );
+                            //        backgroundColor: Colors.black,
+                            //        textColor: Colors.white,
+                            //        fontSize: 12.0
+                            //    );
 
                               }
 

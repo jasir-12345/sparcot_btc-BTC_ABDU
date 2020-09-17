@@ -6,7 +6,7 @@ import 'package:sparcotbtc/Animation/slide_left_rout.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:sparcotbtc/utils/constants.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+//import 'package:fluttertoast/fluttertoast.dart';
 
 class Delivery extends StatefulWidget {
   final objOrder;

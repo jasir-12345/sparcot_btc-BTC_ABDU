@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+//import 'package:fluttertoast/fluttertoast.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sparcotbtc/Api/profileUpdateApi.dart';
 
@@ -269,15 +269,15 @@ class _ProfileState extends State<Profile> {
                         print(rsp);
                        var err=  rsp['blnAPIStatus'];
                        if(err == "false"){
-                         Fluttertoast.showToast(
-                             msg: "Update Failed!",
-                             toastLength: Toast.LENGTH_SHORT,
-                             gravity: ToastGravity.BOTTOM,
+                    //     Fluttertoast.showToast(
+                   //          msg: "Update Failed!",
+                   //          toastLength: Toast.LENGTH_SHORT,
+                   //          gravity: ToastGravity.BOTTOM,
 
-                             backgroundColor: Colors.black,
-                             textColor: Colors.white,
-                             fontSize: 12.0
-                         );
+                    //         backgroundColor: Colors.black,
+                    //         textColor: Colors.white,
+                     //        fontSize: 12.0
+                     //    );
                        }
                        else {
                          SharedPreferences prefs =
@@ -289,27 +289,27 @@ class _ProfileState extends State<Profile> {
 
                          prefs.setString("userCity", _controllerCity.text);
                          prefs.setString("userArea", _controllerHouseArea.text);
-                         Fluttertoast.showToast(
-                             msg: "Update Success!",
-                             toastLength: Toast.LENGTH_SHORT,
-                             gravity: ToastGravity.BOTTOM,
+                  //       Fluttertoast.showToast(
+                  //           msg: "Update Success!",
+                  //           toastLength: Toast.LENGTH_SHORT,
+                  //           gravity: ToastGravity.BOTTOM,
 
-                             backgroundColor: Colors.black,
-                             textColor: Colors.white,
-                             fontSize: 12.0
-                         );
+                   //          backgroundColor: Colors.black,
+                   //          textColor: Colors.white,
+                   //          fontSize: 12.0
+                   //      );
                        }
 
                       }else{
-                        Fluttertoast.showToast(
-                            msg: "Invalid Feilds! Please Complete!",
-                            toastLength: Toast.LENGTH_SHORT,
-                            gravity: ToastGravity.BOTTOM,
+                  //      Fluttertoast.showToast(
+                   //         msg: "Invalid Feilds! Please Complete!",
+                  //          toastLength: Toast.LENGTH_SHORT,
+                   //         gravity: ToastGravity.BOTTOM,
 
-                            backgroundColor: Colors.black,
-                            textColor: Colors.white,
-                            fontSize: 12.0
-                        );
+                   //         backgroundColor: Colors.black,
+                   //         textColor: Colors.white,
+                    //        fontSize: 12.0
+                   //     );
                       }
 //                      var objFullOrder = await {
 //                        ...widget.objOrder,

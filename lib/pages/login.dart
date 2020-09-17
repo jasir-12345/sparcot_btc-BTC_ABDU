@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+//import 'package:fluttertoast/fluttertoast.dart';
 import 'package:sparcotbtc/Api/api.dart';
 import 'package:sparcotbtc/pages/otp.dart';
 import 'package:sparcotbtc/pages/signup.dart';

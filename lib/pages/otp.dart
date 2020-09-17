@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:fluttertoast/fluttertoast.dart';
+//import 'package:fluttertoast/fluttertoast.dart';
 
 import 'package:sparcotbtc/Api/ForgetPassApi.dart';
 import 'package:sparcotbtc/Api/SendOtpApi.dart';
@@ -167,39 +167,39 @@ class _ForgotPasswordState extends State<OTP> {
                         else{
 
                           if(arrErrors.toString() == "[INVALID_USER_NAME]"){
-                            Fluttertoast.showToast(
-                                msg: "Invalid username!",
-                                toastLength: Toast.LENGTH_SHORT,
-                                gravity: ToastGravity.BOTTOM,
+               //             Fluttertoast.showToast(
+               //                 msg: "Invalid username!",
+               //                 toastLength: Toast.LENGTH_SHORT,
+               //                 gravity: ToastGravity.BOTTOM,
 
-                                backgroundColor: Colors.black,
-                                textColor: Colors.white,
-                                fontSize: 12.0
-                            );
+                //                backgroundColor: Colors.black,
+                //                textColor: Colors.white,
+                //                fontSize: 12.0
+                 //           );
                           }
                           else{
-                            Fluttertoast.showToast(
-                                msg: "Something went wrong !",
-                                toastLength: Toast.LENGTH_SHORT,
-                                gravity: ToastGravity.BOTTOM,
+                 //           Fluttertoast.showToast(
+                 //               msg: "Something went wrong !",
+                  //              toastLength: Toast.LENGTH_SHORT,
+                 //               gravity: ToastGravity.BOTTOM,
 
-                                backgroundColor: Colors.black,
-                                textColor: Colors.white,
-                                fontSize: 12.0
-                            );
+                 //               backgroundColor: Colors.black,
+                  //              textColor: Colors.white,
+                  //              fontSize: 12.0
+                 //           );
                           }
                         }
                       }
                       else{
-                        Fluttertoast.showToast(
-                            msg: "Invalid fields!",
-                            toastLength: Toast.LENGTH_SHORT,
-                            gravity: ToastGravity.BOTTOM,
+                 //       Fluttertoast.showToast(
+                 //           msg: "Invalid fields!",
+                 //           toastLength: Toast.LENGTH_SHORT,
+                 //           gravity: ToastGravity.BOTTOM,
 
-                            backgroundColor: Colors.black,
-                            textColor: Colors.white,
-                            fontSize: 12.0
-                        );
+                 //           backgroundColor: Colors.black,
+                  //          textColor: Colors.white,
+                   //         fontSize: 12.0
+                  //      );
                       }
 
                     },

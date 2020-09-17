@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+//import 'package:fluttertoast/fluttertoast.dart';
 import 'package:sparcotbtc/Api/ForgetPassApi.dart';
 import 'package:sparcotbtc/Api/RegOtp.dart';
 import 'package:sparcotbtc/Api/VerfiyOtpApi.dart';
@@ -186,15 +186,15 @@ class _ForgotPasswordStatee extends State<VerifyOtp> {
                         print(widget.strDetail.toString());
                         print(rsp);
                         if(status.toString().trim() == "true"){
-                          Fluttertoast.showToast(
-                              msg: "Signup Successful !",
-                              toastLength: Toast.LENGTH_SHORT,
-                              gravity: ToastGravity.BOTTOM,
+                   //       Fluttertoast.showToast(
+                   //           msg: "Signup Successful !",
+                  //            toastLength: Toast.LENGTH_SHORT,
+                   //           gravity: ToastGravity.BOTTOM,
 
-                              backgroundColor: Colors.black,
-                              textColor: Colors.white,
-                              fontSize: 12.0
-                          );
+                   //           backgroundColor: Colors.black,
+                    //          textColor: Colors.white,
+                   //           fontSize: 12.0
+                   //       );
 
                           Navigator.push(
                             context,
@@ -203,27 +203,27 @@ class _ForgotPasswordStatee extends State<VerifyOtp> {
 
                         }
                         else{
-                          Fluttertoast.showToast(
-                              msg: "Signup Failed!",
-                              toastLength: Toast.LENGTH_SHORT,
-                              gravity: ToastGravity.BOTTOM,
+                 //         Fluttertoast.showToast(
+                 //             msg: "Signup Failed!",
+                 //             toastLength: Toast.LENGTH_SHORT,
+                 //             gravity: ToastGravity.BOTTOM,
 
-                              backgroundColor: Colors.black,
-                              textColor: Colors.white,
-                              fontSize: 12.0
-                          );
+                //              backgroundColor: Colors.black,
+                 //             textColor: Colors.white,
+                  //            fontSize: 12.0
+                //          );
                         }
 
                       }else{
-                        Fluttertoast.showToast(
-                            msg: "Invalid Feilds!",
-                            toastLength: Toast.LENGTH_SHORT,
-                            gravity: ToastGravity.BOTTOM,
+                //        Fluttertoast.showToast(
+                 //           msg: "Invalid Feilds!",
+                //            toastLength: Toast.LENGTH_SHORT,
+                 //           gravity: ToastGravity.BOTTOM,
 
-                            backgroundColor: Colors.black,
-                            textColor: Colors.white,
-                            fontSize: 12.0
-                        );
+                //            backgroundColor: Colors.black,
+                //            textColor: Colors.white,
+                  //          fontSize: 12.0
+                 //       );
                       }
 
                     },

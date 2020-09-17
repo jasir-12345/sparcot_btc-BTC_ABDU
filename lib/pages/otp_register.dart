@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 //import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+//import 'package:fluttertoast/fluttertoast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sparcotbtc/Animation/fadeIn.dart';
 import 'package:sparcotbtc/Animation/slide_left_rout.dart';
@@ -81,42 +81,42 @@ class _MyAppPageState extends State<OTPRegister> {
         if(err=="[USER NAME ALREADY EXIST]"){
           strProgressMessage= "Username already exist ! ";
           blnProgressBar = false;
-          Fluttertoast.showToast(
-              msg: strProgressMessage,
-              toastLength: Toast.LENGTH_SHORT,
-              gravity: ToastGravity.BOTTOM,
+  //        Fluttertoast.showToast(
+  //            msg: strProgressMessage,
+  //            toastLength: Toast.LENGTH_SHORT,
+  //            gravity: ToastGravity.BOTTOM,
 
-              backgroundColor: Colors.black,
-              textColor: Colors.white,
-              fontSize: 12.0
-          );
+  //            backgroundColor: Colors.black,
+   //           textColor: Colors.white,
+   //           fontSize: 12.0
+   //       );
 
         }
         if(err=="[MOBILE NUMBER ALREADY EXIST]"){
           strProgressMessage= "Mobile number already exist ! ";
           blnProgressBar = false;
-          Fluttertoast.showToast(
-              msg: strProgressMessage,
-              toastLength: Toast.LENGTH_SHORT,
-              gravity: ToastGravity.BOTTOM,
-
-              backgroundColor: Colors.black,
-              textColor: Colors.white,
-              fontSize: 12.0
-          );
+     //     Fluttertoast.showToast(
+     //         msg: strProgressMessage,
+      //        toastLength: Toast.LENGTH_SHORT,
+      //        gravity: ToastGravity.BOTTOM,
+      //
+      //        backgroundColor: Colors.black,
+      //        textColor: Colors.white,
+       //       fontSize: 12.0
+       //   );
         }
         if(err!="[USER NAME ALREADY EXIST]" || err!="[MOBILE NUMBER ALREADY EXIST]")  {
           strProgressMessage = "Something went wrong !";
            blnProgressBar = false;
-          Fluttertoast.showToast(
-              msg: strProgressMessage,
-              toastLength: Toast.LENGTH_SHORT,
-              gravity: ToastGravity.BOTTOM,
+        //  Fluttertoast.showToast(
+        //      msg: strProgressMessage,
+        //      toastLength: Toast.LENGTH_SHORT,
+         //     gravity: ToastGravity.BOTTOM,
 
-              backgroundColor: Colors.black,
-              textColor: Colors.white,
-              fontSize: 12.0
-          );
+         //     backgroundColor: Colors.black,
+         //     textColor: Colors.white,
+          //    fontSize: 12.0
+       //   );
         }
         print(objResponse["errCommon"]);
 
